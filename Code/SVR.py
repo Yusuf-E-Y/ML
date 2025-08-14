@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVR
 
-data = pd.read_csv("poly.csv")
+data = pd.read_csv("Datas/poly.csv")
 
 sc = StandardScaler()
 
