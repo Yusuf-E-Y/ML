@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 
 data = pd.read_csv("Datas/ürün.csv")
 
+#Data set transactions
 x = data.iloc[:,0:2].values
 y = data.satinalma.values.reshape(-1,1)
 
@@ -17,6 +18,7 @@ B = data[data.satinalma==1]
 xtrain,xtest,ytrain,ytest = train_test_split(x,y,test_size=0.3,random_state=33)
 sc = StandardScaler() 
 
+#model transactions
 xtrain1 = sc.fit_transform(xtrain)
 xtest1 = sc.transform(xtest)
 
@@ -28,6 +30,7 @@ yhead = knn.predict(xtest1)
 
 scoreList = list()
 
+#finding best value
 COUNT = 21
 for i in range(1,COUNT):
 
@@ -46,6 +49,7 @@ for index,j in enumerate(scoreList, start=1):
 cn = confusion_matrix(ytest,xtest1)
 print(cn)
 
-plt.plot(range(1,COUNT), scoreList)
+plt.plot(range(1,COUNT), scoreList) #change chart
 plt.show()
+
     
