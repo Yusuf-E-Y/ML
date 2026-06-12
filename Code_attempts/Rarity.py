@@ -43,5 +43,5 @@ prediction = model.predict(user_scaled)
 prediction = str(prediction).split(" ")
 
 #Lambda func
-Class = lambda x: 1 if x > str(0.5) else 0
+Class = lambda x: 1 if x > str(0.5) else 0 #Class if-else
 
