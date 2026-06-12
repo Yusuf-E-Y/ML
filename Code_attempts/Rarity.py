@@ -45,3 +45,4 @@ prediction = str(prediction).split(" ")
 #Lambda func
 Class = lambda x: 1 if x > str(0.5) else 0 #Class if-else
 
+print("Rarity predict:", prediction,Class(prediction[2]))
