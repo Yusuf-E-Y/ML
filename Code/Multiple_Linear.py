@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
-data = pd.read_csv('reklam.csv')
+data = pd.read_csv('Datas/reklam.csv')
 
 x = data.iloc[:,1:4].values
 y = data.satış.values.reshape(-1,1)

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import  PolynomialFeatures
 
-data = pd.read_csv('poly.csv')
+data = pd.read_csv('Datas/poly.csv')
 
 x = data.zaman.values.reshape(-1,1)
 y = data.sicaklik.values.reshape(-1,1)

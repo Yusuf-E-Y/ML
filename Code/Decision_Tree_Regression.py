@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.tree import DecisionTreeRegressor
 
-data = pd.read_csv('bilet.csv')
+data = pd.read_csv('Datas/bilet.csv')
 
 x = data.sıra.values.reshape(-1,1)
 y = data.fiyat.values.reshape(-1,1)
