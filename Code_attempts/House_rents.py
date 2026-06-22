@@ -8,9 +8,9 @@ dataFrame = pd.read_csv("kiraveri.csv")
 X = dataFrame[['YIL','ODA SAYISI','M2']].values
 y = dataFrame['ORT.FİYAT'].values.reshape(-1,1)
 
-Rf = RandomForestRegressor(n_estimators=300,random_state=22)
+Rf = RandomForestRegressor(n_estimators=300,random_state=22) #Random Forest Algorithm
 
-Rf.fit(X,y.ravel())
+Rf.fit(X,y.ravel()) #Training
 yhead = Rf.predict(X)
 
 y, rc ,m2 = input().split()
